@@ -17,21 +17,21 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://the-floating-podcast.vercel.app"),
-  title: "The Floating Podcast — We are aspects of God, remembering.",
+  title: "The Floating Podcast | We are aspects of God, remembering.",
   description:
-    "Richard White and Shannon Wilson on consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+    "Richard White and Shannon Wilson on consciousness, ego, and the long path home through every tradition that has ever pointed at the One.",
   openGraph: {
-    title: "The Floating Podcast — We are aspects of God, remembering.",
+    title: "The Floating Podcast | We are aspects of God, remembering.",
     description:
-      "Richard White and Shannon Wilson on consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+      "Richard White and Shannon Wilson on consciousness, ego, and the long path home through every tradition that has ever pointed at the One.",
     type: "website",
     siteName: "The Floating Podcast",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Floating Podcast — We are aspects of God, remembering.",
+    title: "The Floating Podcast | We are aspects of God, remembering.",
     description:
-      "Consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+      "Consciousness, ego, and the long path home through every tradition that has ever pointed at the One.",
   },
 };
 
@@ -62,7 +62,7 @@ export default function RootLayout({
               "@type": "PodcastSeries",
               name: "The Floating Podcast",
               description:
-                "Richard White and Shannon Wilson on consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+                "Richard White and Shannon Wilson on consciousness, ego, and the long path home through every tradition that has ever pointed at the One.",
               url: "https://the-floating-podcast.vercel.app",
               author: [
                 { "@type": "Person", name: "Richard White" },

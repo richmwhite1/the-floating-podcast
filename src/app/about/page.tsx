@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "About — The Floating Podcast",
+  title: "About | The Floating Podcast",
   description:
     "Why The Floating Podcast exists, who hosts it, and what floating means.",
   openGraph: {
@@ -43,23 +43,52 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
               <p>
-                The Floating Podcast exists to help raise consciousness and
-                alleviate suffering. That sounds grand, but the work is intimate
-                — one conversation at a time, one listener at a time, one
-                moment of recognition at a time.
+                We started this podcast because we think the most important
+                conversation anyone can have is about consciousness. Not as some
+                abstract concept, but as the lived experience of waking up out
+                of the trance most of us are walking around in.
+              </p>
+              <p>
+                The biggest threat we all face, and we mean all of us, is the
+                same one it has always been: the temptation to have power and
+                control over other people. It doesn&apos;t matter if it shows up
+                as big government, big business, big tech, organized religion,
+                or AI. The pattern is the same. Institutional megalomania. And
+                the only real antidote is individual sovereignty, a direct and
+                personal connection with your Creator that no institution can
+                mediate or take away from you.
+              </p>
+              <p>
+                We are on{" "}
+                <a
+                  href="https://warriors-on-the-way.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--color-sky-4)] underline hover:text-[var(--color-gold)]"
+                >
+                  Fr. Sean O&apos;Laoire&apos;s team
+                </a>{" "}
+                as Warriors on the Way, working to reclaim the areas of life
+                that have been captured by centralized power: education,
+                healthcare, media, economics, food, spirituality. This is the
+                Great Turning. It starts with each of us waking up.
               </p>
               <p>
                 We draw from three bodies of teaching that have shaped our own
-                paths: the Map of Consciousness as articulated by Dr. David
-                Hawkins, the mystical cosmology of Fr. Sean O&apos;Laoire, and the
-                radical forgiveness curriculum of A Course in Miracles. Each
-                points at the same truth from a different angle.
+                lives: the Map of Consciousness from Dr. David Hawkins,
+                the mystical cosmology of Fr. Sean O&apos;Laoire, and the
+                radical forgiveness practice of A Course in Miracles. We also
+                read and incorporate many other works that point toward
+                non-duality, like The Kybalion, and anything else that helps
+                illuminate the truth from a different angle. Together they
+                paint a picture of what it looks like to liberate yourself from
+                suffering and step into Christ Consciousness.
               </p>
               <p>
-                Our hope is that something here meets you where you are — whether
-                you&apos;re just beginning to question the nature of reality or
-                you&apos;ve been on the path for decades and want companions for
-                the journey.
+                This is literally the most important work and topic we could
+                possibly be discussing. One day it will be more mainstream. For
+                now, we really appreciate the few followers who enjoy listening
+                to us and walking this path together.
               </p>
             </div>
           </div>
@@ -71,18 +100,19 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
               <p>
-                Richard White is the host and producer of The Floating Podcast.
-                He approaches consciousness as both a contemplative and a
-                builder, exploring the territory where philosophy, psychology,
-                and spirituality converge.
+                Richard is the host and producer of The Floating Podcast. He&apos;s
+                a builder by nature, always pulling threads between philosophy,
+                psychology, technology, and spirituality to see where they
+                connect. He writes about intuition, reason, and
+                decentralization, and he produces solo teachings on YouTube
+                where he breaks down Hawkins, A Course in Miracles, and the
+                mystics into something you can actually use in your day-to-day
+                life.
               </p>
               <p>
-                He writes regularly on intuition, reason, and decentralization,
-                and produces solo teachings on YouTube — short lessons drawn from
-                Hawkins, A Course in Miracles, and the mystics, distilled for
-                everyday practice. For Richard, the podcast is the place where
-                these threads come together in real time, unscripted and
-                unpolished, the way real seeking always is.
+                The podcast is where all of that comes together in real time.
+                Nothing scripted, nothing polished. Just two people working
+                through the material the way real seeking actually happens.
               </p>
             </div>
           </div>
@@ -94,18 +124,18 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
               <p>
-                Shannon Wilson is the co-host of The Floating Podcast and brings
-                a medium&apos;s perspective to every conversation. Her gift is
-                the ability to hold space for the unseen — and to translate what
-                moves through that space into language the rest of us can feel.
+                Shannon is the co-host and brings a medium&apos;s perspective to
+                every conversation. She has a gift for holding space for things
+                most people can&apos;t see, and then putting what comes through
+                into words the rest of us can actually feel.
               </p>
               <p>
-                Shannon joins Richard for the long-form dialogues that anchor
-                the podcast, grounding the philosophical in the personal and
-                bringing warmth, humor, and directness to subjects that can
-                otherwise feel abstract. She is a reminder that the path home is
-                not only an intellectual exercise — it is felt, lived, and
-                shared.
+                She joins Richard for the long-form conversations that anchor
+                the show, grounding the philosophical in the personal. She
+                brings warmth, humor, and a directness that keeps things from
+                getting too heady. Shannon is a constant reminder that this
+                path isn&apos;t just an intellectual exercise. It&apos;s felt,
+                lived, and shared.
               </p>
             </div>
           </div>
@@ -118,14 +148,29 @@ export default function AboutPage() {
             <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
               <p>
                 Floating is what happens when you stop swimming. You lie back,
-                the water holds you, and the sky opens up. It&apos;s surrender
-                without collapse — ease without effort.
+                the water holds you, and the sky opens up. Surrender without
+                collapse. Ease without effort.
               </p>
               <p>
                 The name is a metaphor for the inner posture we keep coming back
                 to: the stillness at dawn, the willingness to let the current
                 carry you, the trust that the water knows where to go. We float
                 because fighting the river never got us anywhere worth arriving.
+              </p>
+              <p>
+                It&apos;s also literal. Our favorite activity in the world is
+                floating on a mountain lake with friends, talking about
+                consciousness. There is nothing better. If that sounds like your
+                kind of thing, come join our Floating group through{" "}
+                <a
+                  href="https://warriors-on-the-way.vercel.app/community/the-floaters-salt-lake-city"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--color-sky-4)] underline hover:text-[var(--color-gold)]"
+                >
+                  Warriors on the Way
+                </a>
+                .
               </p>
             </div>
           </div>

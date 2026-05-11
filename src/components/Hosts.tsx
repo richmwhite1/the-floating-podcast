@@ -6,7 +6,7 @@ const hosts = [
   {
     name: "Richard White",
     role: "Host & Producer",
-    bio: "Richard hosts The Floating Podcast and produces solo teachings on YouTube — short lessons drawn from Hawkins, A Course in Miracles, and the mystics, distilled for everyday practice.",
+    bio: "Richard hosts The Floating Podcast and produces solo teachings on YouTube, breaking down Hawkins, A Course in Miracles, and the mystics into lessons you can use every day.",
     primary: true,
     image: "/richard.jpg",
   },

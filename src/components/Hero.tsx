@@ -29,7 +29,7 @@ export default function Hero() {
           style={{ textShadow: "0 1px 12px rgba(0,0,0,0.5)" }}
         >
           Richard White and Shannon Wilson on consciousness, ego, and the long
-          path home — through every tradition that has ever pointed at the One.
+          path home through every tradition that has ever pointed at the One.
         </p>
 
         {/* Listen buttons */}
