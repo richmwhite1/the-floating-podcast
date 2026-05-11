@@ -1,77 +1,18 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20">
-      {/* Sky gradient */}
+    <section className="relative min-h-screen flex flex-col items-center justify-end overflow-hidden pb-24 pt-32">
+      {/* Full-bleed background image */}
       <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(to bottom, #d8e4f0 0%, #b8cfe3 30%, #7ba0c4 60%, #4a6b8a 85%, #3a5a7a 100%)",
-        }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url(/hero.png)" }}
       />
 
-      {/* Sun glow */}
+      {/* Dark overlay for text readability */}
       <div
-        className="absolute top-[18%] left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full"
+        className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle, rgba(253,232,200,0.8) 0%, rgba(253,232,200,0.3) 30%, transparent 70%)",
-        }}
-      />
-
-      {/* Mountain silhouettes */}
-      <div className="absolute bottom-[22%] left-0 right-0 h-[30%]">
-        <div
-          className="absolute inset-0"
-          style={{
-            clipPath:
-              "polygon(0% 100%, 0% 60%, 8% 45%, 18% 55%, 28% 30%, 38% 50%, 48% 20%, 55% 35%, 65% 15%, 72% 40%, 80% 25%, 88% 45%, 95% 35%, 100% 50%, 100% 100%)",
-            background: "linear-gradient(to bottom, #3a5570, #2d4560)",
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            clipPath:
-              "polygon(0% 100%, 0% 70%, 10% 55%, 20% 65%, 30% 45%, 42% 60%, 52% 35%, 60% 50%, 70% 30%, 78% 50%, 85% 40%, 92% 55%, 100% 45%, 100% 100%)",
-            background: "linear-gradient(to bottom, #2d4560, #1f3550)",
-          }}
-        />
-      </div>
-
-      {/* Water */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-[22%]"
-        style={{
-          background:
-            "linear-gradient(to bottom, #4a6b8a, #3a5a7a 40%, #2d4a6a)",
-        }}
-      />
-
-      {/* Warm reflection band on water */}
-      <div
-        className="absolute bottom-[10%] left-[20%] right-[20%] h-[8%] rounded-full"
-        style={{
-          background:
-            "radial-gradient(ellipse, rgba(253,232,200,0.25) 0%, transparent 70%)",
-        }}
-      />
-
-      {/* Hero image */}
-      <div className="relative z-10 mb-6 w-full max-w-3xl px-6">
-        <img
-          src="/hero.png"
-          alt="Jesus Christ resting peacefully by the water under starlit sky"
-          className="w-full h-auto rounded-2xl shadow-2xl"
-        />
-      </div>
-
-      {/* Bottom-edge gradient for text readability */}
-      <div
-        className="absolute bottom-0 left-0 right-0 h-[40%] z-[5] pointer-events-none"
-        style={{
-          background:
-            "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%)",
+            "linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.5) 100%)",
         }}
       />
 
@@ -79,13 +20,13 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <h1
           className="text-5xl md:text-6xl lg:text-7xl font-serif italic text-white mb-6"
-          style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
+          style={{ textShadow: "0 2px 30px rgba(0,0,0,0.6), 0 1px 6px rgba(0,0,0,0.4)" }}
         >
           We are aspects of God, remembering.
         </h1>
         <p
           className="text-lg md:text-xl text-white/90 font-sans max-w-2xl mx-auto mb-10 leading-relaxed"
-          style={{ textShadow: "0 1px 8px rgba(0,0,0,0.3)" }}
+          style={{ textShadow: "0 1px 12px rgba(0,0,0,0.5)" }}
         >
           Richard White and Shannon Wilson on consciousness, ego, and the long
           path home — through every tradition that has ever pointed at the One.

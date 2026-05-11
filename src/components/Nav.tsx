@@ -62,7 +62,10 @@ export default function Nav() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div
+          className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between"
+          style={!scrolled ? { textShadow: "0 1px 8px rgba(0,0,0,0.5)" } : undefined}
+        >
           {/* Logo */}
           <Link
             href="/"
