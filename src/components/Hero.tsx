@@ -66,6 +66,15 @@ export default function Hero() {
         />
       </div>
 
+      {/* Bottom-edge gradient for text readability */}
+      <div
+        className="absolute bottom-0 left-0 right-0 h-[40%] z-[5] pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.4) 100%)",
+        }}
+      />
+
       {/* Text content */}
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <h1

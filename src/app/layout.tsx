@@ -16,9 +16,25 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://the-floating-podcast.vercel.app"),
   title: "The Floating Podcast — We are aspects of God, remembering.",
   description:
     "Richard White and Shannon Wilson on consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+  openGraph: {
+    title: "The Floating Podcast — We are aspects of God, remembering.",
+    description:
+      "Richard White and Shannon Wilson on consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "The Floating Podcast" }],
+    type: "website",
+    siteName: "The Floating Podcast",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Floating Podcast — We are aspects of God, remembering.",
+    description:
+      "Consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
+    images: ["/hero.png"],
+  },
 };
 
 export default function RootLayout({

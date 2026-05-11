@@ -1,17 +1,58 @@
+"use client";
+
+import { useState } from "react";
+
 const hosts = [
   {
     name: "Richard White",
     role: "Host & Producer",
     bio: "Richard hosts The Floating Podcast and produces solo teachings on YouTube — short lessons drawn from Hawkins, A Course in Miracles, and the mystics, distilled for everyday practice.",
     primary: true,
+    image: "/richard.jpg",
   },
   {
     name: "Shannon Wilson",
     role: "Co-Host & Medium",
     bio: "Shannon brings a medium's perspective to the conversation, joining Richard for the long-form dialogues that anchor the podcast.",
     primary: false,
+    image: "/shannon.jpg",
   },
 ];
+
+function Avatar({
+  name,
+  image,
+  primary,
+}: {
+  name: string;
+  image: string;
+  primary: boolean;
+}) {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return (
+      <div
+        className={`w-20 h-20 rounded-full mb-6 flex items-center justify-center ${
+          primary ? "bg-[var(--color-gold-light)]" : "bg-gray-100"
+        }`}
+      >
+        <span className="text-2xl font-serif italic text-[var(--color-sky-4)]">
+          {name[0]}
+        </span>
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={image}
+      alt={name}
+      className="w-20 h-20 rounded-full mb-6 object-cover"
+      onError={() => setFailed(true)}
+    />
+  );
+}
 
 export default function Hosts() {
   return (
@@ -30,18 +71,11 @@ export default function Hosts() {
                   : "bg-white shadow-sm border border-gray-100"
               }`}
             >
-              {/* Avatar placeholder */}
-              <div
-                className={`w-20 h-20 rounded-full mb-6 flex items-center justify-center ${
-                  host.primary
-                    ? "bg-[var(--color-gold-light)]"
-                    : "bg-gray-100"
-                }`}
-              >
-                <span className="text-2xl font-serif italic text-[var(--color-sky-4)]">
-                  {host.name[0]}
-                </span>
-              </div>
+              <Avatar
+                name={host.name}
+                image={host.image}
+                primary={host.primary}
+              />
               <h3 className="text-2xl font-serif italic text-[var(--color-sky-4)] mb-1">
                 {host.name}
               </h3>

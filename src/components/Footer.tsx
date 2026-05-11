@@ -34,7 +34,7 @@ export default function Footer() {
         ))}
       </div>
       <p className="text-white/20 font-sans text-xs">
-        &copy; {new Date().getFullYear()} The Floating Podcast
+        &copy; 2025&ndash;{new Date().getFullYear()} The Floating Podcast &middot; Made with reverence in Salt Lake City.
       </p>
     </footer>
   );
