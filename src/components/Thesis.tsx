@@ -4,18 +4,21 @@ const pillars = [
     subtitle: "David Hawkins",
     description:
       "The Map of Consciousness — a logarithmic scale of human awareness from Shame to Enlightenment. The compass for the journey.",
+    href: "/hawkins",
   },
   {
     title: "The Mystic",
     subtitle: "Fr. Sean O'Laoire",
     description:
       "A Catholic priest, scientist, and mystic who bridges every tradition. Sean's models illuminate the architecture of the soul.",
+    href: "/sean",
   },
   {
     title: "The Course",
     subtitle: "A Course in Miracles",
     description:
       "Nothing real can be threatened. Nothing unreal exists. The Course is the practice — forgiveness as the path home.",
+    href: "/acim",
   },
 ];
 
@@ -42,9 +45,15 @@ export default function Thesis() {
               <p className="text-sm font-sans text-[var(--color-gold)] font-medium mb-4">
                 {pillar.subtitle}
               </p>
-              <p className="text-gray-600 font-sans leading-relaxed">
+              <p className="text-gray-600 font-sans leading-relaxed mb-4">
                 {pillar.description}
               </p>
+              <a
+                href={pillar.href}
+                className="inline-block text-sm font-sans font-medium text-[var(--color-gold)] hover:text-[var(--color-sky-4)] transition-colors"
+              >
+                Learn more &rarr;
+              </a>
             </div>
           ))}
         </div>
