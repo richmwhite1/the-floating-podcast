@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: "A Course in Miracles — The Floating Podcast",
   description:
     "What is A Course in Miracles? Selected quotes, where to read it, and starting points for the Workbook.",
+  openGraph: {
+    title: "A Course in Miracles",
+    description:
+      "Nothing real can be threatened. Nothing unreal exists. Herein lies the peace of God.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 const quotes = [

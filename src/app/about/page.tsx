@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: "About — The Floating Podcast",
   description:
     "Why The Floating Podcast exists, who hosts it, and what floating means.",
+  openGraph: {
+    title: "About The Floating Podcast",
+    description:
+      "Consciousness, ego, and the long path home. Meet the hosts and learn why we float.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 export default function AboutPage() {

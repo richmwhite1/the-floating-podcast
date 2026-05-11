@@ -1,25 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
-import { promises as fs } from "fs";
-import path from "path";
 
-const SUBSCRIBERS_FILE = path.join(process.cwd(), "subscribers.json");
-
-async function readSubscribers(): Promise<
-  { email: string; name?: string; date: string }[]
-> {
-  try {
-    const data = await fs.readFile(SUBSCRIBERS_FILE, "utf-8");
-    return JSON.parse(data);
-  } catch {
-    return [];
-  }
-}
-
-async function writeSubscribers(
-  subscribers: { email: string; name?: string; date: string }[]
-) {
-  await fs.writeFile(SUBSCRIBERS_FILE, JSON.stringify(subscribers, null, 2));
-}
+// In-memory set to deduplicate within a single function instance.
+// For production, replace with a database or email service (e.g. ConvertKit, Mailchimp, Resend).
+const seen = new Set<string>();
 
 export async function POST(request: NextRequest) {
   try {
@@ -34,19 +17,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const subscribers = await readSubscribers();
-
-    if (subscribers.some((s) => s.email === email)) {
+    if (seen.has(email)) {
       return NextResponse.json({ message: "You're already subscribed!" });
     }
 
-    subscribers.push({
-      email,
-      name: name || undefined,
-      date: new Date().toISOString(),
-    });
+    // Log the subscriber — visible in Vercel function logs.
+    // Replace this with an actual email service integration when ready.
+    console.log(
+      JSON.stringify({
+        event: "new_subscriber",
+        email,
+        name: name || null,
+        date: new Date().toISOString(),
+      })
+    );
 
-    await writeSubscribers(subscribers);
+    seen.add(email);
 
     return NextResponse.json({ message: "You're in. Watch your inbox." });
   } catch {

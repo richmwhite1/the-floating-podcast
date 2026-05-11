@@ -13,6 +13,12 @@ export const metadata: Metadata = {
   title: "Calibrated Teachers & Writings — The Floating Podcast",
   description:
     "Every teacher and spiritual writing Dr. David Hawkins calibrated above 200 on the Map of Consciousness.",
+  openGraph: {
+    title: "Calibrated Teachers & Writings",
+    description:
+      "97 teachers and 34 sacred texts calibrated by Dr. David Hawkins on the Map of Consciousness.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 export default function TeachersPage() {

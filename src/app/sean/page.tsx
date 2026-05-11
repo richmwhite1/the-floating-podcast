@@ -5,6 +5,12 @@ export const metadata: Metadata = {
   title: "Fr. Sean O'Laoire — Spirits in Spacesuits — The Floating Podcast",
   description:
     "Fr. Sean O'Laoire's core teachings: Personal Cosmology, Soul Pods, the Three Selves, and comparative mysticism.",
+  openGraph: {
+    title: "Fr. Sean O'Laoire — Spirits in Spacesuits",
+    description:
+      "A Catholic priest, scientist, and mystic who bridges every tradition and illuminates the architecture of the soul.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 const teachings = [

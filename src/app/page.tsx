@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import Episodes from "@/components/Episodes";
 import Thesis from "@/components/Thesis";
 import MapOfConsciousness from "@/components/MapOfConsciousness";
+import KybalionPreview from "@/components/KybalionPreview";
+import CalibratedShowcase from "@/components/CalibratedShowcase";
 import AskTeachers from "@/components/AskTeachers";
 import Quote from "@/components/Quote";
 import Hosts from "@/components/Hosts";
@@ -27,6 +29,12 @@ export default async function Home() {
       </FadeIn>
       <FadeIn>
         <MapOfConsciousness />
+      </FadeIn>
+      <FadeIn>
+        <KybalionPreview />
+      </FadeIn>
+      <FadeIn>
+        <CalibratedShowcase />
       </FadeIn>
       <FadeIn>
         <AskTeachers />

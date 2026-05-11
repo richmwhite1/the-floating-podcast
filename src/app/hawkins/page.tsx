@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Dr. David Hawkins & the Map of Consciousness — The Floating Podcast",
   description:
     "The Map of Consciousness, key concepts, and where to start with David Hawkins' work.",
+  openGraph: {
+    title: "Dr. David Hawkins & the Map of Consciousness",
+    description:
+      "A logarithmic scale of human awareness — the compass for the journey from ego to truth.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 const concepts = [

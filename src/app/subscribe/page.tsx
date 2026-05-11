@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "Subscribe — The Floating Podcast",
   description:
     "Get new episodes, writings, and occasional notes from the path delivered to your inbox.",
+  openGraph: {
+    title: "Subscribe — The Floating Podcast",
+    description:
+      "New episodes, writings, and occasional notes from the path. No noise, no spam.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 export default function SubscribePage() {

@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "Episodes", href: "/episodes" },
   { label: "The Map", href: "/hawkins" },
+  { label: "The Kybalion", href: "/kybalion" },
   { label: "Teachers", href: "/teachers" },
   { label: "About", href: "/about" },
 ];

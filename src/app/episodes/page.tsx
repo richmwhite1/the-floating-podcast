@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: "Episodes — The Floating Podcast",
   description:
     "Every episode of The Floating Podcast. Conversations on consciousness, ego, and the long path home.",
+  openGraph: {
+    title: "Episodes — The Floating Podcast",
+    description:
+      "Every conversation, from the beginning. New episodes drop weekly.",
+    siteName: "The Floating Podcast",
+  },
 };
 
 export default async function EpisodesPage() {
