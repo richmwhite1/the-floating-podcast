@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden py-20">
       {/* Sky gradient */}
       <div
         className="absolute inset-0"
@@ -57,11 +57,13 @@ export default function Hero() {
         }}
       />
 
-      {/* Hero image placeholder */}
-      <div className="relative z-10 mb-6 w-48 h-48 rounded-full border-4 border-white/30 bg-white/10 backdrop-blur-sm flex items-center justify-center">
-        <span className="text-white/60 text-sm font-sans text-center px-4">
-          Hero image
-        </span>
+      {/* Hero image */}
+      <div className="relative z-10 mb-6 w-full max-w-3xl px-6">
+        <img
+          src="/hero.png"
+          alt="Jesus Christ resting peacefully by the water under starlit sky"
+          className="w-full h-auto rounded-2xl shadow-2xl"
+        />
       </div>
 
       {/* Text content */}
