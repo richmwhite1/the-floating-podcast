@@ -64,14 +64,14 @@ export default function HawkinsPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-32 pb-16 px-6"
+        className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6"
         style={{
           background:
             "linear-gradient(to bottom, var(--color-sky-1), var(--color-cream))",
         }}
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
             Dr. David Hawkins &amp; the Map of Consciousness
           </h1>
           <p className="text-gray-600 font-sans max-w-xl mx-auto">
@@ -85,9 +85,9 @@ export default function HawkinsPage() {
       <MapOfConsciousness />
 
       {/* Key Concepts */}
-      <section className="py-20 px-6 bg-[var(--color-cream)]">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[var(--color-cream)]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-10 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-8 sm:mb-10 text-center">
             Key Concepts
           </h2>
           <div className="space-y-8">
@@ -106,9 +106,9 @@ export default function HawkinsPage() {
       </section>
 
       {/* Where to Start */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-10 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-8 sm:mb-10 text-center">
             Where to Start
           </h2>
           <div className="space-y-6">
@@ -135,7 +135,7 @@ export default function HawkinsPage() {
       </section>
 
       {/* Ask Dr. Hawkins card */}
-      <section className="py-20 px-6 bg-[var(--color-cream)]">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[var(--color-cream)]">
         <div className="max-w-xl mx-auto">
           <a
             href="https://notebooklm.google.com/notebook/8373a58a-14d8-4c9c-8ca7-8367dc7c90ff"

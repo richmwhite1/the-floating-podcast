@@ -72,7 +72,7 @@ export default function TeachersClient({
   }, [filtered, levelBands, sortDir]);
 
   return (
-    <section className="py-12 px-6 bg-[var(--color-cream)] min-h-[60vh]">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 bg-[var(--color-cream)] min-h-[60vh]">
       <div className="max-w-4xl mx-auto">
         {/* Tab switcher */}
         <div className="flex justify-center gap-2 mb-8">
@@ -146,26 +146,26 @@ export default function TeachersClient({
                     return (
                       <div
                         key={`${name}-${item.level}`}
-                        className={`flex items-center justify-between px-5 py-3 ${
+                        className={`flex items-center justify-between px-3 sm:px-5 py-3 ${
                           i > 0 ? "border-t border-gray-50" : ""
                         }`}
                       >
                         <div className="flex-1 min-w-0">
-                          <span className="font-sans text-sm text-gray-900 font-medium">
+                          <span className="font-sans text-sm text-gray-900 font-medium truncate">
                             {name}
                           </span>
                           {item.tradition && (
-                            <span className="ml-2 font-sans text-xs text-gray-400">
+                            <span className="ml-2 font-sans text-xs text-gray-400 hidden sm:inline">
                               {item.tradition}
                             </span>
                           )}
                           {item.note && (
-                            <span className="ml-2 font-sans text-xs text-gray-300">
+                            <span className="ml-2 font-sans text-xs text-gray-300 hidden sm:inline">
                               — {item.note}
                             </span>
                           )}
                         </div>
-                        <span className="font-sans text-sm font-semibold text-[var(--color-gold)] tabular-nums ml-4">
+                        <span className="font-sans text-sm font-semibold text-[var(--color-gold)] tabular-nums ml-3 sm:ml-4 flex-shrink-0">
                           {item.level}
                         </span>
                       </div>

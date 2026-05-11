@@ -20,14 +20,14 @@ export default function TeachersPage() {
     <>
       {/* Page hero */}
       <section
-        className="pt-32 pb-16 px-6"
+        className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6"
         style={{
           background:
             "linear-gradient(to bottom, var(--color-sky-1), var(--color-cream))",
         }}
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
             Calibrated Teachers &amp; Writings
           </h1>
           <p className="text-gray-600 font-sans max-w-xl mx-auto mb-4 leading-relaxed">

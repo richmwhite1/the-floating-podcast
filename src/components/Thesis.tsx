@@ -24,20 +24,20 @@ const pillars = [
 
 export default function Thesis() {
   return (
-    <section className="py-24 px-6 bg-[var(--color-cream)]">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[var(--color-cream)]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif italic text-center mb-4 text-[var(--color-sky-4)]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic text-center mb-4 text-[var(--color-sky-4)]">
           Three Pillars
         </h2>
-        <p className="text-center text-gray-600 font-sans mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-gray-600 font-sans mb-10 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base">
           Transcending the levels of consciousness — remembering we are aspects
           of God, joint heirs with Christ.
         </p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-8">
           {pillars.map((pillar) => (
             <div
               key={pillar.title}
-              className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
             >
               <h3 className="text-2xl font-serif italic text-[var(--color-sky-4)] mb-1">
                 {pillar.title}

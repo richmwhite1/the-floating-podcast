@@ -12,14 +12,14 @@ export default function AboutPage() {
     <>
       {/* Page hero */}
       <section
-        className="pt-32 pb-16 px-6"
+        className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6"
         style={{
           background:
             "linear-gradient(to bottom, var(--color-sky-1), var(--color-cream))",
         }}
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
             About The Floating Podcast
           </h1>
           <p className="text-gray-600 font-sans max-w-xl mx-auto">
@@ -28,8 +28,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 px-6 bg-[var(--color-cream)]">
-        <div className="max-w-3xl mx-auto space-y-20">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-[var(--color-cream)]">
+        <div className="max-w-3xl mx-auto space-y-14 sm:space-y-20">
           {/* Section A: Why this podcast exists */}
           <div>
             <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-6">
@@ -65,19 +65,18 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
               <p>
-                Richard White is the host of The Floating Podcast and the builder
-                behind this site. He approaches consciousness as both a
-                contemplative and a builder, exploring the territory where
-                philosophy, psychology, and spirituality converge.
+                Richard White is the host and producer of The Floating Podcast.
+                He approaches consciousness as both a contemplative and a
+                builder, exploring the territory where philosophy, psychology,
+                and spirituality converge.
               </p>
               <p>
                 He writes regularly on intuition, reason, and decentralization,
                 and produces solo teachings on YouTube — short lessons drawn from
                 Hawkins, A Course in Miracles, and the mystics, distilled for
-                everyday practice.
-              </p>
-              <p className="text-sm text-gray-400 italic">
-                [Richard: replace this with your own voice.]
+                everyday practice. For Richard, the podcast is the place where
+                these threads come together in real time, unscripted and
+                unpolished, the way real seeking always is.
               </p>
             </div>
           </div>
@@ -89,14 +88,18 @@ export default function AboutPage() {
             </h2>
             <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
               <p>
-                Shannon Wilson brings a medium&apos;s perspective to the
-                conversation, joining Richard for the long-form dialogues that
-                anchor the podcast. Her gift is the ability to hold space for the
-                unseen — and to translate what moves through that space into
-                language the rest of us can feel.
+                Shannon Wilson is the co-host of The Floating Podcast and brings
+                a medium&apos;s perspective to every conversation. Her gift is
+                the ability to hold space for the unseen — and to translate what
+                moves through that space into language the rest of us can feel.
               </p>
-              <p className="text-sm text-gray-400 italic">
-                [Richard: replace with Shannon&apos;s preferred bio.]
+              <p>
+                Shannon joins Richard for the long-form dialogues that anchor
+                the podcast, grounding the philosophical in the personal and
+                bringing warmth, humor, and directness to subjects that can
+                otherwise feel abstract. She is a reminder that the path home is
+                not only an intellectual exercise — it is felt, lived, and
+                shared.
               </p>
             </div>
           </div>

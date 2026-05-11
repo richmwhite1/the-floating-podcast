@@ -1,9 +1,9 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-end overflow-hidden pb-24 pt-32">
+    <section className="relative min-h-screen flex flex-col items-center justify-end overflow-hidden pb-16 pt-24 sm:pb-24 sm:pt-32">
       {/* Full-bleed background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat bg-[center_top] sm:bg-center"
         style={{ backgroundImage: "url(/hero.png)" }}
       />
 
@@ -17,15 +17,15 @@ export default function Hero() {
       />
 
       {/* Text content */}
-      <div className="relative z-10 text-center px-6 max-w-3xl">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-3xl">
         <h1
-          className="text-5xl md:text-6xl lg:text-7xl font-serif italic text-white mb-6"
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-serif italic text-white mb-4 sm:mb-6"
           style={{ textShadow: "0 2px 30px rgba(0,0,0,0.6), 0 1px 6px rgba(0,0,0,0.4)" }}
         >
           We are aspects of God, remembering.
         </h1>
         <p
-          className="text-lg md:text-xl text-white/90 font-sans max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-white/90 font-sans max-w-2xl mx-auto mb-6 sm:mb-10 leading-relaxed"
           style={{ textShadow: "0 1px 12px rgba(0,0,0,0.5)" }}
         >
           Richard White and Shannon Wilson on consciousness, ego, and the long
@@ -53,7 +53,7 @@ export default function Hero() {
               href={link.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 rounded-full bg-white/15 backdrop-blur-sm border border-white/25 text-white font-sans text-sm font-medium hover:bg-white/25 transition-colors"
+              className="px-5 py-2.5 sm:px-6 sm:py-3 rounded-full bg-white/15 backdrop-blur-sm border border-white/25 text-white font-sans text-sm font-medium hover:bg-white/25 active:bg-white/30 transition-colors"
             >
               {link.label}
             </a>

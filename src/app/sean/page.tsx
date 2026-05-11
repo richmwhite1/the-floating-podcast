@@ -40,14 +40,14 @@ export default function SeanPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-32 pb-16 px-6"
+        className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6"
         style={{
           background:
             "linear-gradient(to bottom, var(--color-sky-1), var(--color-cream))",
         }}
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
             Fr. Sean O&apos;Laoire — Spirits in Spacesuits
           </h1>
           <p className="text-gray-600 font-sans max-w-xl mx-auto">
@@ -58,7 +58,7 @@ export default function SeanPage() {
       </section>
 
       {/* Bio */}
-      <section className="py-16 px-6 bg-[var(--color-cream)]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-[var(--color-cream)]">
         <div className="max-w-3xl mx-auto">
           <p className="font-sans text-gray-700 leading-relaxed">
             Fr. Sean O&apos;Laoire is an Irish-born Catholic priest,
@@ -74,9 +74,9 @@ export default function SeanPage() {
       </section>
 
       {/* Core Teachings */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-10 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-8 sm:mb-10 text-center">
             Core Teachings
           </h2>
           <div className="space-y-8">
@@ -95,7 +95,7 @@ export default function SeanPage() {
       </section>
 
       {/* Ask Sean's AI */}
-      <section className="py-20 px-6 bg-[var(--color-cream)]">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[var(--color-cream)]">
         <div className="max-w-xl mx-auto">
           <a
             href="https://www.spiritsinspacesuits.com/#ask"
@@ -132,7 +132,7 @@ export default function SeanPage() {
       </section>
 
       {/* Coming soon placeholder */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <p className="font-sans text-sm text-gray-400">
             Visual models of Sean&apos;s cosmology — Soul Pods, the Three

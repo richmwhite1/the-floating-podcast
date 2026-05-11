@@ -271,7 +271,7 @@ function TierModal({
     >
       <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
       <div
-        className="relative bg-[#141020] border border-white/10 rounded-2xl max-w-lg w-full p-8 shadow-2xl"
+        className="relative bg-[#141020] border border-white/10 rounded-2xl max-w-lg w-full p-5 sm:p-8 shadow-2xl max-h-[85vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -358,7 +358,7 @@ export default function MapOfConsciousness() {
   return (
     <section
       id="the-map"
-      className="py-24 px-6 relative overflow-hidden"
+      className="py-16 sm:py-24 px-3 sm:px-6 relative overflow-hidden"
       style={{
         background:
           "radial-gradient(ellipse at top, #1a1530 0%, #0a0a1a 100%)",
@@ -382,10 +382,10 @@ export default function MapOfConsciousness() {
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif italic text-center mb-2 text-white">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic text-center mb-2 text-white">
           The Map of Consciousness
         </h2>
-        <p className="text-center text-white/60 font-sans mb-12 text-sm">
+        <p className="text-center text-white/60 font-sans mb-8 sm:mb-12 text-sm">
           David R. Hawkins, M.D., Ph.D.
         </p>
 
@@ -402,10 +402,10 @@ export default function MapOfConsciousness() {
               <button
                 key={tier.level}
                 onClick={() => setSelectedTier(tier)}
-                className="flex items-center justify-between relative group transition-transform hover:scale-[1.02] cursor-pointer"
+                className="flex items-center justify-between relative group transition-transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                 style={{
-                  width: `${tier.width}%`,
-                  minHeight: tier.isThreshold ? "48px" : "36px",
+                  width: `${Math.max(tier.width, 55)}%`,
+                  minHeight: tier.isThreshold ? "44px" : "34px",
                   background: tier.isTop
                     ? `linear-gradient(90deg, #e8e0f0, #ffffff, #e8e0f0)`
                     : `linear-gradient(90deg, ${darken(tier.color, 25)}, ${tier.color}, ${darken(tier.color, 25)})`,
@@ -419,8 +419,8 @@ export default function MapOfConsciousness() {
                   boxShadow: tier.isThreshold
                     ? "0 0 20px rgba(162,200,78,0.4)"
                     : undefined,
-                  paddingLeft: "12px",
-                  paddingRight: "12px",
+                  paddingLeft: "10px",
+                  paddingRight: "10px",
                 }}
                 aria-label={`${tier.label}, level ${tier.level} — ${tier.emotion}. Click for details.`}
               >
@@ -439,13 +439,25 @@ export default function MapOfConsciousness() {
           })}
         </div>
 
-        <p className="text-center text-white/40 font-sans mt-8 text-xs max-w-md mx-auto">
+        {/* Color legend — visible on mobile where emotion text is hidden */}
+        <div className="flex items-center justify-center gap-1.5 mt-8 sm:hidden">
+          <span className="w-2 h-2 rounded-full bg-[#ac3040]" />
+          <span className="text-white/30 font-sans text-[10px]">Force</span>
+          <span className="mx-1 text-white/20">|</span>
+          <span className="w-2 h-2 rounded-full bg-[#a2c84e]" />
+          <span className="text-white/30 font-sans text-[10px]">Threshold</span>
+          <span className="mx-1 text-white/20">|</span>
+          <span className="w-2 h-2 rounded-full bg-[#6c62c8]" />
+          <span className="text-white/30 font-sans text-[10px]">Power</span>
+        </div>
+
+        <p className="text-center text-white/40 font-sans mt-4 sm:mt-8 text-xs max-w-md mx-auto">
           Below 200: force, contraction, ego. Above 200: power, expansion,
           truth. The threshold at Courage is where consciousness begins to
           serve life.
         </p>
         <p className="text-center text-white/30 font-sans mt-2 text-xs">
-          Click any level to explore it
+          Tap any level to explore it
         </p>
       </div>
 

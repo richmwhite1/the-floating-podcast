@@ -7,6 +7,8 @@ import Quote from "@/components/Quote";
 import Hosts from "@/components/Hosts";
 import Footer from "@/components/Footer";
 import NewsletterCard from "@/components/NewsletterCard";
+import FadeIn from "@/components/FadeIn";
+import BackToTop from "@/components/BackToTop";
 import { fetchEpisodes } from "@/lib/youtube";
 
 export const revalidate = 3600;
@@ -17,14 +19,29 @@ export default async function Home() {
   return (
     <>
       <Hero />
-      <Episodes episodes={episodes} />
-      <Thesis />
-      <MapOfConsciousness />
-      <AskTeachers />
-      <Quote />
-      <Hosts />
-      <NewsletterCard />
+      <FadeIn>
+        <Episodes episodes={episodes} />
+      </FadeIn>
+      <FadeIn>
+        <Thesis />
+      </FadeIn>
+      <FadeIn>
+        <MapOfConsciousness />
+      </FadeIn>
+      <FadeIn>
+        <AskTeachers />
+      </FadeIn>
+      <FadeIn>
+        <Quote />
+      </FadeIn>
+      <FadeIn>
+        <Hosts />
+      </FadeIn>
+      <FadeIn>
+        <NewsletterCard />
+      </FadeIn>
       <Footer />
+      <BackToTop />
     </>
   );
 }

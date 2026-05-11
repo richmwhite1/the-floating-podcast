@@ -27,7 +27,7 @@ export default function EpisodesClient({
   }, [episodes, search, sortOrder]);
 
   return (
-    <section className="py-12 px-6 bg-[var(--color-cream)] min-h-[60vh]">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 bg-[var(--color-cream)] min-h-[60vh]">
       <div className="max-w-5xl mx-auto">
         {/* Controls */}
         <div className="flex flex-col sm:flex-row gap-4 mb-10">

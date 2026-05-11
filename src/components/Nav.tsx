@@ -53,6 +53,18 @@ export default function Nav() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileOpen]);
+
   return (
     <>
       <nav
@@ -147,69 +159,79 @@ export default function Nav() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
-      {mobileOpen && (
-        <div className="fixed inset-0 z-50 md:hidden">
-          <div
-            className="absolute inset-0 bg-black/50"
+      {/* Mobile menu with slide animation */}
+      <div
+        className={`fixed inset-0 z-50 md:hidden transition-visibility ${
+          mobileOpen ? "visible" : "invisible"
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className={`absolute inset-0 bg-black/50 transition-opacity duration-300 ${
+            mobileOpen ? "opacity-100" : "opacity-0"
+          }`}
+          onClick={() => setMobileOpen(false)}
+        />
+        {/* Drawer */}
+        <div
+          className={`absolute right-0 top-0 bottom-0 w-72 bg-[var(--color-cream)] shadow-xl p-8 flex flex-col transition-transform duration-300 ease-out ${
+            mobileOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <button
             onClick={() => setMobileOpen(false)}
-          />
-          <div className="absolute right-0 top-0 bottom-0 w-72 bg-[var(--color-cream)] shadow-xl p-8 flex flex-col">
-            <button
-              onClick={() => setMobileOpen(false)}
-              className="self-end mb-8 text-gray-400 hover:text-gray-600"
-              aria-label="Close menu"
+            className="self-end mb-8 text-gray-400 hover:text-gray-600"
+            aria-label="Close menu"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+
+          <div className="flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileOpen(false)}
+                className="font-sans text-base text-gray-700 hover:text-[var(--color-sky-4)] transition-colors"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+                {link.label}
+              </Link>
+            ))}
+          </div>
 
-            <div className="flex flex-col gap-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
+          <div className="mt-8 pt-6 border-t border-gray-200">
+            <p className="font-sans text-xs text-gray-400 uppercase tracking-wider mb-4">
+              Listen
+            </p>
+            <div className="flex gap-3">
+              {listenLinks.map((link) => (
+                <a
+                  key={link.label}
                   href={link.href}
-                  onClick={() => setMobileOpen(false)}
-                  className="font-sans text-base text-gray-700 hover:text-[var(--color-sky-4)] transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Listen on ${link.label}`}
+                  className="p-2 rounded-full text-gray-400 hover:text-[var(--color-gold)] transition-colors"
                 >
-                  {link.label}
-                </Link>
+                  {link.icon}
+                </a>
               ))}
-            </div>
-
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <p className="font-sans text-xs text-gray-400 uppercase tracking-wider mb-4">
-                Listen
-              </p>
-              <div className="flex gap-3">
-                {listenLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Listen on ${link.label}`}
-                    className="p-2 rounded-full text-gray-400 hover:text-[var(--color-gold)] transition-colors"
-                  >
-                    {link.icon}
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }

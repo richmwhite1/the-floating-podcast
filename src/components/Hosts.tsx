@@ -56,16 +56,16 @@ function Avatar({
 
 export default function Hosts() {
   return (
-    <section className="py-24 px-6 bg-[var(--color-cream)]">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[var(--color-cream)]">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif italic text-center mb-12 text-[var(--color-sky-4)]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic text-center mb-8 sm:mb-12 text-[var(--color-sky-4)]">
           Your Hosts
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
           {hosts.map((host) => (
             <div
               key={host.name}
-              className={`rounded-2xl p-8 ${
+              className={`rounded-2xl p-6 sm:p-8 ${
                 host.primary
                   ? "bg-white shadow-md border-2 border-[var(--color-gold-light)]"
                   : "bg-white shadow-sm border border-gray-100"

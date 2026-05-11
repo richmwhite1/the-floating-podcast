@@ -24,7 +24,6 @@ export const metadata: Metadata = {
     title: "The Floating Podcast — We are aspects of God, remembering.",
     description:
       "Richard White and Shannon Wilson on consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
-    images: [{ url: "/hero.png", width: 1200, height: 630, alt: "The Floating Podcast" }],
     type: "website",
     siteName: "The Floating Podcast",
   },
@@ -33,7 +32,6 @@ export const metadata: Metadata = {
     title: "The Floating Podcast — We are aspects of God, remembering.",
     description:
       "Consciousness, ego, and the long path home — through every tradition that has ever pointed at the One.",
-    images: ["/hero.png"],
   },
 };
 

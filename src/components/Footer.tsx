@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="py-16 px-6 bg-[var(--color-cosmic-deep)] text-center">
-      <p className="text-xl md:text-2xl font-serif italic text-white/80 max-w-2xl mx-auto mb-8 leading-relaxed">
+    <footer className="py-12 sm:py-16 px-4 sm:px-6 bg-[var(--color-cosmic-deep)] text-center">
+      <p className="text-lg sm:text-xl md:text-2xl font-serif italic text-white/80 max-w-2xl mx-auto mb-6 sm:mb-8 leading-relaxed">
         &ldquo;The light has come. You are healed and you can heal.&rdquo;
       </p>
       <p className="text-white/30 font-sans text-xs tracking-wide uppercase mb-6">

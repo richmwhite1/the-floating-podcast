@@ -14,7 +14,7 @@ function FeaturedEpisode({ episode }: { episode: Episode }) {
             loading="lazy"
           />
         </div>
-        <h3 className="text-xl md:text-2xl font-serif italic text-[var(--color-sky-4)] mt-6 mb-2">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-serif italic text-[var(--color-sky-4)] mt-4 sm:mt-6 mb-2">
           {episode.title}
         </h3>
         {episode.description && (
@@ -53,9 +53,18 @@ function EpisodeCard({ episode }: { episode: Episode }) {
         </div>
       </div>
       <div className="p-4">
-        <h4 className="font-sans text-sm font-medium text-gray-900 leading-snug line-clamp-2 group-hover:text-[var(--color-sky-4)] transition-colors">
+        <h4 className="font-sans text-sm font-medium text-gray-900 leading-snug line-clamp-2 group-hover:text-[var(--color-sky-4)] transition-colors mb-1">
           {episode.title}
         </h4>
+        {episode.published && (
+          <p className="font-sans text-xs text-gray-400">
+            {new Date(episode.published).toLocaleDateString("en-US", {
+              year: "numeric",
+              month: "short",
+              day: "numeric",
+            })}
+          </p>
+        )}
       </div>
     </a>
   );
@@ -68,12 +77,12 @@ export default function Episodes({ episodes }: { episodes: Episode[] }) {
   const grid = rest.slice(0, 5);
 
   return (
-    <section className="py-24 px-6 bg-[var(--color-cream)]">
+    <section className="py-16 sm:py-24 px-4 sm:px-6 bg-[var(--color-cream)]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-serif italic text-center mb-4 text-[var(--color-sky-4)]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif italic text-center mb-4 text-[var(--color-sky-4)]">
           Latest Episodes
         </h2>
-        <p className="text-center text-gray-600 font-sans mb-12 max-w-xl mx-auto">
+        <p className="text-center text-gray-600 font-sans mb-8 sm:mb-12 max-w-xl mx-auto text-sm sm:text-base">
           New conversations on consciousness, ego, and the path home.
         </p>
 

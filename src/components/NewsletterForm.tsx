@@ -51,7 +51,7 @@ export default function NewsletterForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-3">
-      <div className={`flex flex-col ${variant === "page" ? "sm:flex-row" : ""} gap-3`}>
+      <div className={`flex flex-col ${variant === "page" ? "sm:flex-row" : ""} gap-2 sm:gap-3`}>
         <input
           type="text"
           placeholder="Name (optional)"
@@ -70,7 +70,7 @@ export default function NewsletterForm({
         <button
           type="submit"
           disabled={status === "loading"}
-          className="px-6 py-2.5 rounded-lg bg-[var(--color-sky-4)] text-white font-sans text-sm font-medium hover:bg-[var(--color-gold)] transition-colors disabled:opacity-60"
+          className="px-6 py-3 sm:py-2.5 rounded-lg bg-[var(--color-sky-4)] text-white font-sans text-sm font-medium hover:bg-[var(--color-gold)] active:bg-[var(--color-gold)] transition-colors disabled:opacity-60"
         >
           {status === "loading" ? "Subscribing…" : "Subscribe"}
         </button>

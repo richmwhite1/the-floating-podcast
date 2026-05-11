@@ -80,14 +80,14 @@ export default function ACIMPage() {
     <>
       {/* Hero */}
       <section
-        className="pt-32 pb-16 px-6"
+        className="pt-24 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6"
         style={{
           background:
             "linear-gradient(to bottom, var(--color-sky-1), var(--color-cream))",
         }}
       >
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif italic text-[var(--color-sky-4)] mb-4">
             A Course in Miracles
           </h1>
           <p className="text-gray-600 font-sans max-w-xl mx-auto">
@@ -97,9 +97,9 @@ export default function ACIMPage() {
       </section>
 
       {/* What is the Course? */}
-      <section className="py-20 px-6 bg-[var(--color-cream)]">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-[var(--color-cream)]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-6">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-6">
             What is the Course?
           </h2>
           <div className="prose prose-gray font-sans leading-relaxed space-y-4 text-gray-700">
@@ -130,9 +130,9 @@ export default function ACIMPage() {
       </section>
 
       {/* Selected Quotes */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-10 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-8 sm:mb-10 text-center">
             Selected Quotes
           </h2>
           <div className="space-y-6">
@@ -154,7 +154,7 @@ export default function ACIMPage() {
       </section>
 
       {/* Where to Read */}
-      <section className="py-16 px-6 bg-[var(--color-cream)]">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-[var(--color-cream)]">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-4">
             Where to Read It
@@ -175,9 +175,9 @@ export default function ACIMPage() {
       </section>
 
       {/* Starting Points */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-10 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-serif italic text-[var(--color-sky-4)] mb-8 sm:mb-10 text-center">
             Starting Points for the Workbook
           </h2>
           <div className="space-y-6">
