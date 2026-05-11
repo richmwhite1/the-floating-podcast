@@ -6,6 +6,7 @@ import AskTeachers from "@/components/AskTeachers";
 import Quote from "@/components/Quote";
 import Hosts from "@/components/Hosts";
 import Footer from "@/components/Footer";
+import NewsletterCard from "@/components/NewsletterCard";
 import { fetchEpisodes } from "@/lib/youtube";
 
 export const revalidate = 3600;
@@ -22,6 +23,7 @@ export default async function Home() {
       <AskTeachers />
       <Quote />
       <Hosts />
+      <NewsletterCard />
       <Footer />
     </>
   );
