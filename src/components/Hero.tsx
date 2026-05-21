@@ -3,8 +3,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex flex-col items-center justify-end overflow-hidden pb-16 pt-24 sm:pb-24 sm:pt-32">
       {/* Full-bleed background image */}
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat bg-[center_top] sm:bg-center"
-        style={{ backgroundImage: "url(/hero.png)" }}
+        className="absolute inset-0 bg-contain bg-no-repeat bg-top sm:bg-center"
+        style={{ backgroundImage: "url(/hero.png)", backgroundColor: "#0b1520" }}
       />
 
       {/* Dark overlay for text readability */}
